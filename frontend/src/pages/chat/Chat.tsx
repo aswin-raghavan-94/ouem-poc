@@ -9,7 +9,7 @@ import uuid from 'react-uuid';
 
 import styles from "./Chat.module.css";
 import Azure from "../../assets/Azure.svg";
-import thorogood from "../../assets/thorogood.svg";
+import OUEM from "../../assets/OUEM.svg";
 
 import {
     ChatMessage,
@@ -551,12 +551,12 @@ const Chat = () => {
                         {!messages || messages.length < 1 ? (
                             <Stack className={styles.chatEmptyState}>
                                 <img
-                                    src={thorogood}
+                                    src={OUEM}
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
-                                <h1 className={styles.chatEmptyStateTitle}>Thorogood Webcast Intelligence</h1>
-                                <h2 className={styles.chatEmptyStateSubtitle}>This chatbot will answer questions based on content in Thorogood's recorded webcasts</h2>
+                                <h1 className={styles.chatEmptyStateTitle}>Ouem Chat with Quaterly Reports</h1>
+                                <h2 className={styles.chatEmptyStateSubtitle}>This chatbot will answer questions based on content in Quaterly Reports</h2>
                             </Stack>
                         ) : (
                             <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px"}} role="log">
