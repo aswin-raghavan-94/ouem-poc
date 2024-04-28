@@ -46,15 +46,14 @@
     gap: 4px;
     width: 86px;
     height: 32px;
-    background: radial-gradient(109.81% 107.82% at 100.1% 90.19%, #083ace 33.63%, #54748C 70.31%, #007B85 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    border-radius: 4px;
+    background: #001F60; 
     flex: none;
     order: 1;
     flex-grow: 0;
     position: absolute;
     right: 20px;
     cursor: pointer;
-    font-family: "Tenorite", "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-family: "Gotham", "Century Gothic";
 }
 
 .shareButton {

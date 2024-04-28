@@ -24,7 +24,7 @@
     word-wrap: break-word;
     max-width: 800px;
     overflow-x: auto;
-    font-family: "Tenorite", "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-family: "Gotham", "Century Gothic";
 }
 
 .answerFooter {
@@ -46,7 +46,7 @@
     font-weight: 400;
     font-size: 12px;
     line-height: 16px;
-    font-family: "Tenorite", "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-family: "Gotham", "Century Gothic";
 
     display: flex;
     align-items: center;
@@ -132,7 +132,7 @@
     display: flex;
     align-items: center;
     color: #616161;
-    font-family: "Tenorite", "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-family: "Gotham", "Century Gothic";
 }
 
 .accordionTitle:hover {

@@ -124,7 +124,7 @@
 }
 
 .chatMessageErrorContent {
-    font-family: "Tenorite", "Segoe UI";
+    font-family: "Century Gothic", "Gotham";
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -253,7 +253,7 @@
     max-width: 30%;
     overflow-y: scroll;
     max-height: calc(100vh - 100px);
-    font-family: "Tenorite", "Segoe UI", "Segoe UI Web (West European)", "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif;
+    font-family: "Gotham", "Century Gothic";
 }
 
 .citationPanelHeaderContainer {

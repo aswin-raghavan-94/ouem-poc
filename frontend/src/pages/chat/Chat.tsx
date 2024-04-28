@@ -10,6 +10,7 @@ import uuid from 'react-uuid';
 import styles from "./Chat.module.css";
 import Azure from "../../assets/Azure.svg";
 import OUEM from "../../assets/OUEM.svg";
+import OUEMclr from "../../assets/OUEM(colour).svg";
 
 import {
     ChatMessage,
@@ -551,7 +552,7 @@ const Chat = () => {
                         {!messages || messages.length < 1 ? (
                             <Stack className={styles.chatEmptyState}>
                                 <img
-                                    src={OUEM}
+                                    src={OUEMclr}
                                     className={styles.chatIcon}
                                     aria-hidden="true"
                                 />
@@ -626,7 +627,7 @@ const Chat = () => {
                                         },
                                         root: {
                                             color: '#FFFFFF',
-                                            background: "#00AC6A"
+                                            background: "#001F60"
                                         },
                                         rootDisabled: {
                                             background: "#BDBDBD"
@@ -646,7 +647,7 @@ const Chat = () => {
                                         },
                                         root: {
                                             color: '#FFFFFF',
-                                            background: disabledButton() ? "#BDBDBD" : "#00AC6A",
+                                            background: disabledButton() ? "#BDBDBD" : "#001F60",
                                             cursor: disabledButton() ? "" : "pointer"
                                         },
                                     }}
