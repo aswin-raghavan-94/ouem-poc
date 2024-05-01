@@ -551,13 +551,9 @@ const Chat = () => {
                     <div className={styles.chatContainer}>
                         {!messages || messages.length < 1 ? (
                             <Stack className={styles.chatEmptyState}>
-                                <img
-                                    src={OUEMclr}
-                                    className={styles.chatIcon}
-                                    aria-hidden="true"
-                                />
-                                <h1 className={styles.chatEmptyStateTitle}>Ouem Chat with Quaterly Reports</h1>
-                                <h2 className={styles.chatEmptyStateSubtitle}>This chatbot will answer questions based on content in Quaterly Reports</h2>
+                                
+                                <h1 className={styles.chatEmptyStateTitle}>Hi,</h1>
+                                <h1 className={styles.chatEmptyStateTitle}>How can I assist you today ?</h1>
                             </Stack>
                         ) : (
                             <div className={styles.chatMessageStream} style={{ marginBottom: isLoading ? "40px" : "0px"}} role="log">
