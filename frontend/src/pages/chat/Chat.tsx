@@ -614,7 +614,7 @@ const Chat = () => {
                                         <span className={styles.stopGeneratingText} aria-hidden="true">Stop generating</span>
                                 </Stack>
                             )}
-                            <Stack>
+                            {/*<Stack>
                                 {appStateContext?.state.isCosmosDBAvailable?.status !== CosmosDBStatus.NotConfigured && <CommandBarButton
                                     role="button"
                                     styles={{ 
@@ -634,7 +634,7 @@ const Chat = () => {
                                     onClick={newChat}
                                     disabled={disabledButton()}
                                     aria-label="start a new chat button"
-                                />}
+                                />
                                 <CommandBarButton
                                     role="button"
                                     styles={{ 
@@ -660,7 +660,25 @@ const Chat = () => {
                                     modalProps={modalProps}
                                 >
                                 </Dialog>
-                            </Stack>
+                            </Stack>*/}
+                            <CommandBarButton
+                                    role="button"
+                                    styles={{ 
+                                        icon: { 
+                                            color: '#FFFFFF',
+                                        },
+                                        root: {
+                                            color: '#FFFFFF',
+                                            background: disabledButton() ? "#BDBDBD" : "#001F60",
+                                            cursor: disabledButton() ? "" : "pointer"
+                                        },
+                                    }}
+                                    className={appStateContext?.state.isCosmosDBAvailable?.status !== CosmosDBStatus.NotConfigured ? styles.clearChatBroom : styles.clearChatBroomNoCosmos}
+                                    text="Clear Chat"
+                                    onClick={appStateContext?.state.isCosmosDBAvailable?.status !== CosmosDBStatus.NotConfigured ? clearChat : newChat}
+                                    disabled={disabledButton()}
+                                    aria-label="clear chat button"
+                                />
                             <QuestionInput
                                 clearOnSend
                                 placeholder="Type a new question..."
