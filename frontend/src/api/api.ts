@@ -13,6 +13,7 @@ export async function conversationApi(options: ConversationRequest, abortSignal:
         signal: abortSignal
     });
 
+    console.log(response)
     return response;
 }
 
